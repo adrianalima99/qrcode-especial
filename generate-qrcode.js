@@ -1,9 +1,7 @@
 const QRCode = require('qrcode');
 
-// URL direto para a página final (não precisa mais da tela do QR Code)
-const siteUrl = 'https://adrianalima99.github.io/qrcode-especial/';
-
-QRCode.toFile('./assets/qrcode-final.png', siteUrl, {
+// Gera QR Code que abre DIRETO na mensagem
+QRCode.toFile('./assets/qrcode-pronto.png', 'https://adrianalima99.github.io/qrcode-especial/', {
     color: {
         dark: '#0A2463',  // Azul escuro
         light: '#FFFFFF'  // Fundo branco
@@ -13,12 +11,10 @@ QRCode.toFile('./assets/qrcode-final.png', siteUrl, {
     errorCorrectionLevel: 'H'
 }, (err) => {
     if (err) {
-        console.error('Erro ao gerar QR Code:', err);
+        console.error('Erro:', err);
         return;
     }
     console.log('✅ QR Code gerado com sucesso!');
-    console.log('🔗 Link direto para a mensagem:', siteUrl);
-    console.log('\nAgora basta:');
-    console.log('1. Enviar o arquivo assets/qrcode-final.png para ela');
-    console.log('2. Quando escanear, verá direto sua mensagem linda!');
+    console.log('📁 Arquivo: assets/qrcode-pronto.png');
+    console.log('🔗 Direto para: https://adrianalima99.github.io/qrcode-especial/');
 });
