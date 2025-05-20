@@ -3,52 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensagem Especial Para Você ❤️</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f8ff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-        .message-container {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            max-width: 400px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        .special-photo {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .spotify-player {
-            margin-top: 25px;
-        }
-    </style>
+    <title>Para Você 🤍</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="message-container">
-        <img src="./img/sua-foto.jpg" alt="Foto Especial" class="special-photo">
-        <h1>Para Você ❤️</h1>
-        <p>Esta música me faz lembrar de todos os momentos especiais que compartilhamos...</p>
-        
-        <div class="spotify-player">
-            <iframe src="https://open.spotify.com/embed/track/4ziqkaBXfo4GrmuF0gsNyi?utm_source=generator" 
-                    width="100%" 
-                    height="152" 
-                    frameborder="0" 
-                    allowfullscreen 
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-            </iframe>
+    <div class="container">
+        <div class="content">
+            <img src="./img/sua-foto.jpg" alt="Foto Especial" class="special-image">
+            <h1>Para você 🤍</h1>
+            <p class="message">            
+                Normalmente nunca me faltam palavras,<br>
+                mas quando o assunto é você...<br>
+                busco em canções o que por vezes não consigo dizer.<br><br>
+                
+                Como na <i>Geleira do Tempo</i>,<br>
+                você tem o poder de derreter minhas incertezas<br>
+                e me ensina que estar apaixonada pode ser:<br>
+                <span class="destaque-musica">"um rio que corre pro mar sem pressa"</span><br><br>
+                
+                Você colore meus dias cinza,<br>
+                e esse seu sorriso - ah, esse seu sorriso! -<br>
+                me lembra que os melhores sentimentos<br>
+                são aqueles que a gente sente sem precisar explicar.
+            </p>
+            
+            <div class="spotify-player">
+                <iframe src="https://open.spotify.com/embed/track/4ziqkaBXfo4GrmuF0gsNyi?utm_source=generator" 
+                        width="100%" 
+                        height="152" 
+                        frameborder="0" 
+                        allowfullscreen 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                </iframe>
+            </div>
         </div>
     </div>
 </body>

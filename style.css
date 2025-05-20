@@ -4,39 +4,59 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    padding: 10px;
 }
 
 .container {
     width: 100%;
     max-width: 400px;
-    padding: 20px;
 }
 
 .content {
     background-color: white;
     border-radius: 16px;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
-    box-shadow: 0 8px 24px rgba(10, 36, 99, 0.2);
+    box-shadow: 0 4px 12px rgba(10, 36, 99, 0.15);
 }
 
 .special-image {
     width: 100%;
-    max-height: 200px;
+    max-height: 220px;
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .message {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    white-space: pre-line;
+    font-size: 15px;
+    line-height: 1; /* Mais compacto que antes */
+    margin-bottom: 12px;
+    color: #333;
+    padding: 0 5px;
+}
+
+.message br {
+    display: block;
+    margin: 4px 0; /* Espaçamento reduzido entre linhas */
+    content: "";
+}
+.destaque-musica {
+    color: #3e92cc;
+    font-style: italic;
+    font-weight: 500;
+    display: block;
+    margin: 6px 0; /* Reduzido de 10px */
 }
 
 .spotify-player {
-    margin-top: 20px;
+    margin-top: 15px; /* Reduzido de 20px */
+}
+
+h1 {
+    color: #0a2463;
+    margin: 8px 0 12px; /* Reduzido */
+    font-size: 22px;
 }
