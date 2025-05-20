@@ -1,13 +1,21 @@
 const QRCode = require('qrcode');
 
-QRCode.toFile('./assets/qrcode.png', 'https://github.com/adrianalima99/qrcode-especial', {
+// URL ABSOLUTAMENTE CORRETA
+const siteUrl = 'https://adrianalima99.github.io/qrcode-especial';
+
+QRCode.toFile('./assets/qrcode.png', siteUrl, {
     color: {
-        dark: '#0A2463',  // Azul escuro
-        light: '#D6F1FF'  // Fundo azul claro
+        dark: '#0A2463',
+        light: '#FFFFFF'  // Fundo branco para melhor leitura
     },
     width: 400,
-    margin: 2
+    margin: 2,
+    errorCorrectionLevel: 'H'
 }, (err) => {
-    if (err) throw err;
-    console.log('QR Code gerado!');
+    if (err) {
+        console.error('Erro ao gerar QR Code:', err);
+        return;
+    }
+    console.log('✅ QR Code gerado com sucesso!');
+    console.log('🔗 Link utilizado:', siteUrl);
 });
