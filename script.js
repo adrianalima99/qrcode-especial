@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Configurações personalizadas (EDITE AQUI!)
     const config = {
-        spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT', // ID da música do Spotify
+        spotifyTrackId: '4ziqkaBXfo4GrmuF0gsNyi', // ID da música do Spotify
         imageUrl: 'img/sua-foto.jpg', // Imagem que vai aparecer
-        message: 'Sempre que ouço essa música, penso em você. É a nossa música! ❤️\n\n- Com carinho, [Seu Nome]', // Mensagem personalizada
+        message: 'Sempre que ouço essa música, penso em você. É a nossa música! ❤️\n\n', // Mensagem personalizada
         qrCodeImage: 'assets/qrcode.png' // Imagem do QR Code
     };
 
