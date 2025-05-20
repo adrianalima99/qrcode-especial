@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Você ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte do Google (Montserrat - Minimalista) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Ícone do Spotify (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- QR Code (antes de ser escaneado) -->
+            <div class="qrcode-container" id="qrcode-container">
+                <img src="assets/qrcode.png" alt="QR Code Especial" id="qrcode">
+                <p class="scan-me">Escaneie-me ❤️</p>
+            </div>
+
+            <!-- Conteúdo que aparece após escanear (inicialmente escondido) -->
+            <div class="content hidden" id="content">
+                <!-- Imagem Personalizada -->
+                <img src="img/sua-foto.jpg" alt="Foto Especial" class="special-image">
+
+                <!-- Título e Mensagem -->
+                <h1>Para Você</h1>
+                <p class="message" id="message"></p>
+
+                <!-- Player do Spotify -->
+                <div class="spotify-player">
+                    <div class="spotify-header">
+                        <i class="fab fa-spotify"></i>
+                        <span>Música Especial</span>
+                    </div>
+                    <iframe id="spotify-embed" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
