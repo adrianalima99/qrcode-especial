@@ -1,7 +1,7 @@
 const QRCode = require('qrcode');
 
 // URL ABSOLUTAMENTE CORRETA
-const siteUrl = 'https://adrianalima99.github.io/qrcode-especial';
+const siteUrl = 'https://adrianalima99.github.io/qrcode-especial/';
 
 QRCode.toFile('./assets/qrcode.png', siteUrl, {
     color: {
